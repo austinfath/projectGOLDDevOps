@@ -16,7 +16,7 @@ services:
   depends_on:
     - seleniumhub
   environment:
-    - HUB_PORT_4444_TCP_ADDR=seleniumhub
+    - HUB_PORT_5555_TCP_ADDR=seleniumhub
   networks:
     - prodnetwork
  chrome:
@@ -24,6 +24,6 @@ services:
   depends_on:
     - seleniumhub
   environment:
-    - HUB_PORT_4444_TCP_ADDR=seleniumhub
+    - HUB_PORT_5555_TCP_ADDR=seleniumhub
   networks:
     - prodnetwork
