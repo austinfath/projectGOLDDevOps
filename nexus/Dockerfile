@@ -35,6 +35,7 @@ RUN groupadd -r nexus -g 3001 && \
 VOLUME ${SONATYPE_WORK}
 
 EXPOSE 8081
+EXPOSE 4444
 
 WORKDIR /opt/sonatype/nexus
 
